@@ -5,7 +5,7 @@ The overview of these two tables is shown as
 <img src="https://user-images.githubusercontent.com/97944674/184493064-a6abca56-532d-4ed9-9bfc-7db931372b58.png" width="700" height="230">
 
 ## Q1: Calculating total harvestable (fish over 4kg) biomass each month
-This question was solved by integrating the normal distribution function times the weight of fish from 4 kg to inf. `result = integrate.quad(lambda x: x * n/(std * sqrt(2*pi)) * exp(-0.5*((x-avg_weight)/std)**2), 4, inf)` where x represents weight, n represents number of fish with such a weight. Result of this question is shown below
+This question was solved by integrating the normal distribution function times the weight of fish from 4 kg to inf. `result = integrate.quad(lambda x: x * n/(std * sqrt(2*pi)) * exp(-0.5*((x-avg_weight)/std)**2), 4, inf)` where x represents weight, n represents total number of individuals in a cage. Result of this question is shown below
 
 <img src="https://user-images.githubusercontent.com/97944674/184493158-46c9d98b-3969-40ca-af0b-e845bde8ceac.png" width="400" height="260">
 
